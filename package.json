@@ -1,0 +1,12 @@
+{
+  "name": "node_class1",
+  "version": "1.0.0",
+  "description": "This is the class of Node js",
+  "license": "ISC",
+  "author": "Biplab Sharma",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start":"node main.js"
+  }
+}
