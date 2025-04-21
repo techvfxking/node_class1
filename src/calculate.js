@@ -29,7 +29,7 @@ export const add_1 = (numArr = [0]) => {
     //logData(result);
 }
 
-export const add_2 = (...arg) => {
+export const add_2 = (...arg) => { //If I use spread operator as function parameter known as rest operator
     let result = 0;
     arg = arg.filter(x => typeof(x) !== "string");
     result = arg.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
