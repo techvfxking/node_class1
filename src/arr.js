@@ -64,3 +64,5 @@ export const arr_exce = () => {
 
     logData(arr2);
 }
+
+
