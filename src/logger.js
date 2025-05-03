@@ -1,3 +1,5 @@
+import { formatDate } from "./datefns.js";
+
 const logData = (data, type = "") => {
     const timeStamp = returnTimeStamp();
     
@@ -19,7 +21,12 @@ const logData = (data, type = "") => {
 }
 
 export const returnTimeStamp = () => {
-    return `[${new Date().toLocaleString()}]`;
+    //return `[${new Date().toLocaleString()}]`;
+
+    const date = new Date();
+    const format = "yyyy-MM-dd hh:mm:ss:zz tt";
+
+    return `${formatDate(date, format)}`;
 }
 
 export default logData;
