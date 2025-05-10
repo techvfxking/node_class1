@@ -3,6 +3,7 @@ import {arr_exce} from "./src/arr.js"
 import {executeComplexObj} from "./src/complexObj.js"
 import logData from "./src/logger.js";
 import { formatDate } from "./src/datefns.js";
+import { timeoutcheck, intervalCheck } from "./src/timeoutAndInterval.js";
 
 const main = () => {
     // add_1([1,2]);
@@ -15,11 +16,14 @@ const main = () => {
     //arr_exce();
     //executeComplexObj();
 
-    const date = new Date();
-    const format = "d, MMM, yyyy"
-    const formattedDate = formatDate(date,format);
+    // const date = new Date();
+    // const format = "d, MMM, yyyy"
+    // const formattedDate = formatDate(date,format);
 
-    logData(formattedDate);
+    // logData(formattedDate);
+
+    //timeoutcheck();
+    intervalCheck();
 }
 
 main();
