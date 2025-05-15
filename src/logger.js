@@ -1,5 +1,10 @@
 import { formatDate } from "./datefns.js";
-
+/**
+ * With this function we can log the data with the timestamp
+ * @see {@link returnTimeStamp}: With this function we are generating the timestamp
+ * @param {*} data: The Data that we want to log
+ * @param {*} type: What type of the log it is, like Error, Information etc.
+ */
 const logData = (data, type = "") => {
     const timeStamp = returnTimeStamp();
     
